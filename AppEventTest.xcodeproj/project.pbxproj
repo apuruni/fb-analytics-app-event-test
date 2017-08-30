@@ -15,6 +15,7 @@
 		BC1D8B7B1C894CB900F66212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1D8B7A1C894CB900F66212 /* Assets.xcassets */; };
 		BC1D8B7E1C894CB900F66212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1D8B7C1C894CB900F66212 /* LaunchScreen.storyboard */; };
 		BC1D8B871C894E5200F66212 /* Jockey.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1D8B861C894E5200F66212 /* Jockey.m */; };
+		BC8A0D521C9C52C400496FED /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8A0D511C9C52C400496FED /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		BC1D8B7F1C894CB900F66212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1D8B851C894E5200F66212 /* Jockey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jockey.h; sourceTree = "<group>"; };
 		BC1D8B861C894E5200F66212 /* Jockey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jockey.m; sourceTree = "<group>"; };
+		BC8A0D501C9C52C400496FED /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		BC8A0D511C9C52C400496FED /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				BC1D8B881C894E5600F66212 /* jockey */,
 				BC1D8B711C894CB900F66212 /* AppDelegate.h */,
 				BC1D8B721C894CB900F66212 /* AppDelegate.m */,
+				BC8A0D501C9C52C400496FED /* MenuViewController.h */,
+				BC8A0D511C9C52C400496FED /* MenuViewController.m */,
 				BC1D8B741C894CB900F66212 /* MainWebViewController.h */,
 				BC1D8B751C894CB900F66212 /* MainWebViewController.m */,
 				BC1D8B771C894CB900F66212 /* Main.storyboard */,
@@ -241,6 +246,7 @@
 				BC1D8B761C894CB900F66212 /* MainWebViewController.m in Sources */,
 				BC1D8B731C894CB900F66212 /* AppDelegate.m in Sources */,
 				BC1D8B701C894CB900F66212 /* main.m in Sources */,
+				BC8A0D521C9C52C400496FED /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppEventTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mizuky.com.AppEventTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.kunwang.coolgame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -365,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppEventTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mizuky.com.AppEventTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.kunwang.coolgame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -1,11 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AdC-yB-bvz">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="fef-RG-hQ9">
+            <objects>
+                <viewController id="AdC-yB-bvz" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uwV-cL-Ewx"/>
+                        <viewControllerLayoutGuide type="bottom" id="cPn-w8-gla"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XlA-UB-Tvb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSt-9A-T22">
+                                <rect key="frame" x="28" y="28" width="520" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xmL-3j-Z1x"/>
+                                </constraints>
+                                <state key="normal" title="WebView"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="f1g-j0-gT4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ll-zW-1px">
+                                <rect key="frame" x="28" y="66" width="544" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cas-yR-fdB"/>
+                                </constraints>
+                                <state key="normal" title="Facebook Login - Default"/>
+                                <connections>
+                                    <action selector="FbLoginDefault:" destination="AdC-yB-bvz" eventType="touchUpInside" id="Rgd-Tm-LfH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dne-dD-zxN">
+                                <rect key="frame" x="28" y="104" width="544" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NFN-um-XRV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cLx-Ho-Lsj"/>
+                                </constraints>
+                                <state key="normal" title="Facebook Login - Web View"/>
+                                <connections>
+                                    <action selector="FbLoginWebView:" destination="AdC-yB-bvz" eventType="touchUpInside" id="ghM-Vv-ZpL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-lK-YHR">
+                                <rect key="frame" x="28" y="142" width="544" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z2g-Og-UYM"/>
+                                </constraints>
+                                <state key="normal" title="Share Link"/>
+                                <connections>
+                                    <action selector="shareLinkBasic:" destination="AdC-yB-bvz" eventType="touchUpInside" id="Yby-xP-73q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-W1-1oD">
+                                <rect key="frame" x="28" y="180" width="544" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Epe-bl-qiH"/>
+                                </constraints>
+                                <state key="normal" title="Facebook Login - iOS build-in"/>
+                                <connections>
+                                    <action selector="FbLoginIOSBuildIn:" destination="AdC-yB-bvz" eventType="touchUpInside" id="Jgi-yK-Hiq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-DI-P1I">
+                                <rect key="frame" x="28" y="218" width="544" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ejT-me-Q4U"/>
+                                </constraints>
+                                <state key="normal" title="Share Video"/>
+                                <connections>
+                                    <action selector="ShareVideo:" destination="AdC-yB-bvz" eventType="touchUpInside" id="3Hh-jG-3Bm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dne-dD-zxN" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="1fd-IB-Ree"/>
+                            <constraint firstItem="Z1g-W1-1oD" firstAttribute="top" secondItem="Cdi-lK-YHR" secondAttribute="bottom" constant="8" id="1gv-kW-XO6"/>
+                            <constraint firstItem="Dne-dD-zxN" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="53P-uj-dz9"/>
+                            <constraint firstItem="QSt-9A-T22" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="AnT-XJ-ymi"/>
+                            <constraint firstItem="Z1g-W1-1oD" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="Awq-h9-czx"/>
+                            <constraint firstItem="0Ll-zW-1px" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="CPD-Wf-k17"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ll-zW-1px" secondAttribute="trailing" constant="8" id="CUj-Gc-bEM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dne-dD-zxN" secondAttribute="trailing" constant="8" id="G0Y-pJ-lmc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z1g-W1-1oD" secondAttribute="trailing" constant="8" id="GkG-QU-VVk"/>
+                            <constraint firstItem="Cdi-lK-YHR" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="LHD-Lk-6iO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QSt-9A-T22" secondAttribute="trailing" constant="32" id="MNH-o1-0qs"/>
+                            <constraint firstItem="Cdi-lK-YHR" firstAttribute="top" secondItem="Dne-dD-zxN" secondAttribute="bottom" constant="8" id="O4H-qB-Pdy"/>
+                            <constraint firstItem="0Ll-zW-1px" firstAttribute="top" secondItem="QSt-9A-T22" secondAttribute="bottom" constant="8" id="RkV-20-pKM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zmi-DI-P1I" secondAttribute="trailing" constant="8" id="SFc-6l-OgV"/>
+                            <constraint firstItem="QSt-9A-T22" firstAttribute="top" secondItem="uwV-cL-Ewx" secondAttribute="bottom" constant="8" id="V0P-0L-cFa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dne-dD-zxN" secondAttribute="trailing" constant="8" id="YFo-aP-hpv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cdi-lK-YHR" secondAttribute="trailing" constant="8" id="exA-AZ-U4k"/>
+                            <constraint firstItem="zmi-DI-P1I" firstAttribute="leading" secondItem="XlA-UB-Tvb" secondAttribute="leadingMargin" constant="8" id="osy-2v-n2P"/>
+                            <constraint firstItem="Dne-dD-zxN" firstAttribute="top" secondItem="0Ll-zW-1px" secondAttribute="bottom" constant="8" id="sSb-Bi-m4K"/>
+                            <constraint firstItem="zmi-DI-P1I" firstAttribute="top" secondItem="Z1g-W1-1oD" secondAttribute="bottom" constant="8" id="zK6-nL-c0v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbN-33-EDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-411"/>
+        </scene>
         <!--Main Web View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -37,6 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="924" y="-411"/>
         </scene>
     </scenes>
 </document>
